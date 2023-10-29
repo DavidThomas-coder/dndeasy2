@@ -12,3 +12,5 @@ class Character(db.Model):
         self.class = class
         self.name = name
         self.background = background
+
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
