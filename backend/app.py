@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from models import User
+from models import User, Character
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql://davidthomas@localhost/dndeasy_development'
